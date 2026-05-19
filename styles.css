@@ -188,33 +188,30 @@ a:hover { text-decoration: underline; }
 }
 
 /* Identity */
-.identity { padding: 80px 0; background: var(--bg-soft); }
+.identity { padding: 64px 0 80px; background: #fff; }
 .identity-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 48px;
   margin: 0;
   padding: 0;
 }
-.identity-grid > div {
-  background: #fff;
-  padding: 20px 24px;
-  border-left: 3px solid var(--psg-navy);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-card);
+@media (min-width: 768px) {
+  .identity-grid { grid-template-columns: repeat(4, 1fr); }
 }
+.identity-grid > div { padding: 0; background: none; border: 0; box-shadow: none; }
 .identity-grid dt {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  font-weight: 600;
-  margin: 0 0 4px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--psg-navy);
+  font-weight: 700;
+  margin: 0 0 6px;
+  text-transform: none;
 }
 .identity-grid dd {
   margin: 0;
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 800;
   color: var(--text);
 }
 
