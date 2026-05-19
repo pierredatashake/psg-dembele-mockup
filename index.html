@@ -99,17 +99,45 @@
 <body>
 
 <header class="site-header" role="banner">
-  <div class="container header-inner">
-    <a href="https://www.psg.fr" class="brand" aria-label="Paris Saint-Germain - Accueil">
-      <span class="brand-mark" aria-hidden="true">PSG</span>
-      <span class="brand-text">Paris Saint-Germain</span>
-    </a>
-    <nav class="primary-nav" aria-label="Navigation principale">
-      <a href="https://www.psg.fr/football-masculin/effectif">Effectif</a>
-      <a href="https://www.psg.fr/actualites">Actualités</a>
-      <a href="https://www.psg.fr/football-masculin/palmares">Palmarès</a>
-      <a href="https://store.psg.fr" class="nav-store">Boutique</a>
-    </nav>
+  <div class="header-inner">
+    <div class="header-left">
+      <button type="button" class="burger" aria-label="Ouvrir le menu">
+        <span class="burger-icon" aria-hidden="true">
+          <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="6" width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="12" width="22" height="2" rx="1" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="burger-label">MENU</span>
+      </button>
+      <a href="https://www.psg.fr" class="brand-logo" aria-label="Paris Saint-Germain - Accueil">
+        <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/86/Paris_Saint-Germain_Logo.svg/1024px-Paris_Saint-Germain_Logo.svg.png" alt="Paris Saint-Germain" width="56" height="56">
+      </a>
+      <nav class="primary-nav" aria-label="Navigation principale">
+        <a href="https://www.psg.fr/actualites">Actualité</a>
+        <a href="https://www.psg.fr/psg-tv">PSG TV</a>
+        <a href="https://www.psg.fr/playzone">Playzone</a>
+        <a href="https://www.psg.fr/myparis">MyParis</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="https://www.psg.fr/myparis" class="header-action">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span>Se connecter</span>
+      </a>
+      <a href="https://billetterie.psg.fr" class="header-action">Billetterie</a>
+      <a href="https://store.psg.fr" class="header-action">Boutique</a>
+      <button type="button" class="header-lang" aria-label="Changer de langue">
+        FR
+        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 
