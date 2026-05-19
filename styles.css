@@ -344,13 +344,15 @@ a:hover { text-decoration: underline; }
 .palmares { padding: 96px 0; background: var(--bg-dark); color: var(--text-light); }
 .palmares-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
+@media (min-width: 640px) { .palmares-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .palmares-grid { grid-template-columns: repeat(5, 1fr); gap: 16px; } }
 .palmares-block {
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
-  padding: 28px;
+  padding: 20px;
   border-radius: var(--radius);
 }
 .palmares-block h3 {
